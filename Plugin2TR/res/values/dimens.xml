@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="float_tab_high">36.0dip</dimen>
+    <dimen name="time_label_size">60.0sp</dimen>
+    <dimen name="dp90">90dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp25">25dp</dimen>
+    <dimen name="dp70">70dp</dimen>
+</resources>

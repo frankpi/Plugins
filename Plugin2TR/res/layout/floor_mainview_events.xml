@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240.0dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/float_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <Button
+            android:id="@+id/btnChufaClear"
+            style="@style/value_button_float_common_style01"
+            android:layout_width="90.0dip"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:enabled="false"
+            android:text="@string/string_clear" />
+
+        <Button
+            android:id="@+id/btnChufa"
+            style="@style/value_button_float_common_style01"
+            android:layout_width="90.0dip"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="触发" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:text="注:选中事件后点击触发即可使用,入侵没法取消"
+        android:textColor="@color/white"
+        android:textSize="8sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/float_split_line" />
+
+    <ListView
+        android:id="@+id/listViewEvent"
+        style="@style/value_listview_base"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginTop="2dp" />
+
+</LinearLayout>

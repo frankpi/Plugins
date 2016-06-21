@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/festivalLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:layout_weight="1.0"
+    android:paddingBottom="2dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="2dp" >
+
+    <TextView
+        android:id="@+id/festival_name"
+        style="@style/value_textivew_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/festival_img"
+        android:layout_toRightOf="@+id/festival_img"
+        android:text="圣诞节" />
+
+    <ImageView
+        android:id="@+id/festival_select_img"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+		android:src="@drawable/ic_common_check"
+        />
+
+    <ImageView
+        android:id="@+id/festival_img"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_unknown" />
+
+</RelativeLayout>

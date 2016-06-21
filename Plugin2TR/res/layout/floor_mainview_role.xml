@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floatLayoutRoleView"
+    android:layout_width="300.0dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/float_bg"
+    android:paddingLeft="20.0dip"
+    android:paddingRight="20.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/cbHP"
+            style="@style/value_checkbox_switch4"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:text="无限血" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/float_split_line" />
+
+        <CheckBox
+            android:id="@+id/cbMP"
+            style="@style/value_checkbox_switch4"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:text="无限蓝" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/float_split_line" />
+
+        <CheckBox
+            android:id="@+id/cbInvi"
+            style="@style/value_checkbox_switch4"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:text="隐身" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/float_split_line" />
+
+        <CheckBox
+            android:id="@+id/cbIsFriendly"
+            style="@style/value_checkbox_switch4"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:text="安全领域" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center|left"
+            android:text="注:危险生物在进入安全领域后自动调血"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/float_split_line" />
+
+        <TextView
+            android:id="@+id/btnKillSelf"
+            style="@style/value_button_float_common_style01"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="6dp"
+            android:text="自杀"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+</ScrollView>

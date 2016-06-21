@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300.0dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/float_bg"
+    android:orientation="vertical"
+    android:paddingLeft="20.0dip"
+    android:paddingRight="20.0dip" >
+
+    <CheckBox
+        android:id="@+id/cbFlying"
+        style="@style/value_checkbox_switch4"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:text="飞行时间无限" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/float_split_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/floatBtnAddWing"
+            style="@style/value_button_float_common_style01"
+            android:layout_width="115.0dip"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="装备" />
+        
+        <Button
+            android:id="@+id/floatBtnWingClear"
+            style="@style/value_button_float_common_style01"
+            android:layout_width="115.0dip"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:enabled="false"
+            android:text="卸下" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="注:选中翅膀后再点击装备即可使用"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <GridView
+        android:id="@+id/floatGridItemList"
+        style="@style/value_gridview_base"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:horizontalSpacing="3.0dip"
+        android:numColumns="4"
+        android:verticalSpacing="3.0dip" />
+
+</LinearLayout>

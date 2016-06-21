@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp2" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dp90"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp2"
+        android:background="@drawable/float_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/terraria_android_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GG助手"
+                    android:textColor="#ff6caf3b"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="泰拉瑞亚"
+                    android:textColor="#ffffffff"
+                    android:textSize="8sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="@dimen/dp70"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/radioMenus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="3dp" >
+
+                <RadioButton
+                    android:id="@+id/radioMenuRole"
+                    style="@style/value_button_float_radio_exex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/float_tab_high"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/ic_float_menu_role_true"
+                    android:text="角色" />
+
+                <RadioButton
+                    android:id="@+id/radioMenuGame"
+                    style="@style/value_button_float_radio_exex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/float_tab_high"
+                    android:drawableLeft="@drawable/ic_float_menu_common_true"
+                    android:text="游戏" />
+
+                <RadioButton
+                    android:id="@+id/radioMenuWing"
+                    style="@style/value_button_float_radio_exex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/float_tab_high"
+                    android:drawableLeft="@drawable/ic_float_menu_wing"
+                    android:text="翅膀" />
+
+                <RadioButton
+                    android:id="@+id/radioMenuFestival"
+                    style="@style/value_button_float_radio_exex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/float_tab_high"
+                    android:drawableLeft="@drawable/ic_float_menu_festival"
+                    android:text="节日" />
+
+                <RadioButton
+                    android:id="@+id/radioMenuEvents"
+                    style="@style/value_button_float_radio_exex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/float_tab_high"
+                    android:drawableLeft="@drawable/ic_float_menu_events"
+                    android:text="事件" />
+
+                <!-- <RadioButton
+                    android:id="@+id/radioMenuPack"
+                    style="@style/value_button_float_radio_exex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/float_tab_high"
+                    android:drawableLeft="@drawable/ic_float_menu_packtrue"
+                    android:text="物品" /> -->
+
+                <RadioButton
+                    android:id="@+id/radioMenuGuide"
+                    style="@style/value_button_float_radio_exex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/float_tab_high"
+                    android:drawableLeft="@drawable/ic_float_menu_guide"
+                    android:text="攻略" />
+
+                <RadioButton
+                    android:id="@+id/radioMenuCapshot"
+                    style="@style/value_button_float_radio_exex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/float_tab_high"
+                    android:layout_marginBottom="1dp"
+                    android:drawableLeft="@drawable/ic_float_menu_capstrue"
+                    android:text="截图" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/float_split_line" />
+
+                <RadioButton
+                    android:id="@+id/minimum"
+                    style="@style/value_button_green01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/float_tab_high"
+                    android:layout_marginTop="1dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/ic_minimun"
+                    android:drawablePadding="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="0dp"
+                    android:text="隐藏"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/close"
+                    style="@style/value_button_green01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/float_tab_high"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/ic_close"
+                    android:drawablePadding="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="0dp"
+                    android:text="返回"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/floatLayoutFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

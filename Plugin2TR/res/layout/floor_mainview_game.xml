@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300.0dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/float_bg"
+    android:orientation="vertical"
+    android:paddingLeft="20.0dip"
+    android:paddingRight="20.0dip"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroupDay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbGameDay"
+                style="@style/value_button_float_radio_exex"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/ic_float_role_day"
+                android:text="跳转白天" />
+
+            <RadioButton
+                android:id="@+id/rbGameNight"
+                style="@style/value_button_float_radio_exex"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/ic_float_role_night"
+                android:text="跳转夜晚" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/timeSpeedText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:text="时间加速:x0"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <SeekBar
+                android:id="@+id/timeSpeed"
+                style="@style/value_seekbar_base_float"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/float_split_line" />
+
+        <CheckBox
+            android:id="@+id/cb_lockTime"
+            style="@style/value_checkbox_switch4"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:text="锁定当前时间" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/float_split_line" />
+
+        <CheckBox
+            android:id="@+id/cbLockRain"
+            style="@style/value_checkbox_switch4"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:text="下雨" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/float_split_line" />
+
+        <CheckBox
+            android:id="@+id/cbLockLightning"
+            style="@style/value_checkbox_switch4"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:text="雷雨(晚上有效)" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="GreenText">@color/green</color>
+    <color name="background_transparent_press">#44c6e6c4</color>
+    <color name="bgColor">#fff0f0f0</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff3399ff</color>
+    <color name="color_red">#ffcc0000</color>
+    <color name="color_scheme_gray">#ff868686</color>
+    <color name="color_scheme_green">#ff3aca4e</color>
+    <color name="devideline">#ffededed</color>
+    <color name="exchange_green">#ff64c95f</color>
+    <color name="float_split_line">#ffffffff</color>
+    <color name="float_themem">#ff6caf3b</color>
+    <color name="float_white_trans">#ffffffff</color>
+    <color name="gray">#ff818181</color>
+    <color name="green">#ff39ab07</color>
+    <color name="green_tag">#ff41ad3c</color>
+    <color name="mctool_orange">#ff41ad3c</color>
+    <color name="mctool_orange_press">#ff336600</color>
+    <color name="numbers_text_color">#ff8c8c8c</color>
+    <color name="text_color">#ff666666</color>
+    <color name="text_color_hint">#ffadadad</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+      <color name="color_text_grey_green_checkable">#fff5f5f5</color>  
+</resources>
