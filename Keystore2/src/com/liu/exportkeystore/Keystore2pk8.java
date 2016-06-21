@@ -41,6 +41,7 @@ public class Keystore2pk8 {
 			return;
 		}
 
+		System.out.println(" ");
 		System.out.println("正在开始从keystore文件里提取公私钥内容....");
 		localKeyStore.load(localFileInputStream, str3.toCharArray());
 
