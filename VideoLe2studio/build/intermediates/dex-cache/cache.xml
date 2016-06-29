@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/libs/fastjson-1.2.13.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="40f60c83fac24f70d4c7c2a255dc9ad8e3749987">
+        <dex dex="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/build/intermediates/pre-dexed/release/fastjson-1.2.13_64b0b933035f93be4633a97a74cdf29061b2fd92.jar" />
+    </item>
+    <item
+        jar="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/libs/okhttp-2.7.5.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="7a15a7db50f86c4b64aa3367424a60e3a325b8f1">
+        <dex dex="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/build/intermediates/pre-dexed/release/okhttp-2.7.5_8e40ab5376188c4c99f17ff3a04bc5598cc6cee5.jar" />
+    </item>
+    <item
+        jar="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/libs/okio-1.8.0.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/build/intermediates/pre-dexed/release/okio-1.8.0_1c64d848cef29f8fba74e56e378a5d1665553ec5.jar" />
+    </item>
+
+</items>

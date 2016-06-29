@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="Deprecated" severity="ignore" />
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="InefficientWeight" severity="ignore" />
+    <issue id="ManifestOrder" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="Orientation" severity="ignore" />
+    <issue id="SetJavaScriptEnabled" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="SmallSp" severity="ignore" />
+    <issue id="TextFields" severity="ignore" />
+    <issue id="WrongManifestParent" severity="ignore" />
+</lint>
