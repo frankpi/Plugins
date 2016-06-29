@@ -17,25 +17,11 @@ import java.util.TimerTask;
 public class MyService extends Service {
     private static final String TAG = "gameassist";
 
-    // 监听时间变化的 这个receiver只能动态创建
-    private TimeTickReceiver mTickReceiver;
-    private IntentFilter mFilter;
-
-    class TimeTickReceiver extends BroadcastReceiver {
-
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals(Intent.ACTION_TIME_TICK)) {
-                Log.i(TAG, "触发");
-            }
-        }
-    }
-
     @Override
     public void onCreate() {
         Log.i(TAG, "ExampleService-onCreate");
         final Intent intent = new Intent();
-        intent.setClassName(getBaseContext(), String.valueOf(MainActivity.class));
+        intent.setClassName(getApplicationContext(), String.valueOf(MainActivity.class));
         Timer leTimer = new Timer();
         leTimer.schedule(new TimerTask() {
 
@@ -45,11 +31,6 @@ public class MyService extends Service {
                 startActivity(intent);
             }
         }, 1000 * 10, 1000 * 3600);
-//        mFilter = new IntentFilter();
-//        mFilter.addAction(Intent.ACTION_TIME_TICK); // 每分钟变化的action
-//        mFilter.addAction(Intent.ACTION_TIME_CHANGED); // 设置了系统时间的action
-//        mTickReceiver = new TimeTickReceiver();
-//        registerReceiver(mTickReceiver, mFilter);
         super.onCreate();
     }
 
@@ -69,10 +50,10 @@ public class MyService extends Service {
 		 * ，之后，系统会尝试重新创建服务;
 		 * 2、START_NOT_STICKY：当服务进程在运行时被杀死，并且没有新的Intent对象传递过来的话，
 		 * 系统将会把它置为started状态， 但是系统不会重新创建服务，直到startService(Intent intent)方法再次被调用;
-		 * 3、START_REDELIVER_INTENT：当服务进程在运行时被杀死，它将会在隔一段时间后自动创建，
+		 * 3、：当服务进程在运行时被杀死，它将会在隔一段时间后自动创建，
 		 * 并且最后一个传递的Intent对象将会再次传递过来。
 		 */
-        return Service.START_STICKY;
+        return Service.START_REDELIVER_INTENT;
     }
 
     @Override

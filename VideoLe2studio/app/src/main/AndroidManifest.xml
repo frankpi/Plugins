@@ -12,6 +12,7 @@
         android:name=".MainApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
         android:label="@string/app_name" >
         <activity
             android:name="com.frankpi.videole2.MainActivity"

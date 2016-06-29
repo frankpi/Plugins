@@ -18,12 +18,7 @@ public class MainApplication extends Application {
         super.onCreate();
         CrashHandler crashHandler = CrashHandler.getInstance();
         crashHandler.init(getApplicationContext());
-        if (!Log2.isNetworkAvailable(getApplicationContext())) {
-            startActivity(new Intent(android.provider.Settings.ACTION_WIFI_SETTINGS));
-            Log.i(TAG, "网络异常，软件不可用");
-        } else {
-            serverIntent = new Intent(getApplicationContext(), MyService.class);
-            startService(serverIntent);
-        }
+        serverIntent = new Intent(getApplicationContext(), MyService.class);
+        startService(serverIntent);
     }
 }

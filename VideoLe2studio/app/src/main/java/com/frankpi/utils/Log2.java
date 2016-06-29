@@ -8,11 +8,14 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Environment;
+import android.util.Log;
 import android.widget.EditText;
 
 public class Log2 {
 
+    private static String TAG = "gameassist";
     public static StringBuilder log = new StringBuilder();
+    private static SimpleMailSender simpleMailSender = new SimpleMailSender();
 
     public static void displayLog(final EditText tvLog, final String logtext) {
         log.append(logtext).append('\n');
@@ -57,22 +60,25 @@ public class Log2 {
         return dateFormat.format(System.currentTimeMillis());
     }
 
-    public static boolean saveLog(String json, String name) {
-        File file = new File(Environment.getDataDirectory()
-                + File.separator + name + File.separator + getTime() + ".txt");
-        FileOutputStream fop;
-        try {
-            // if file doesnt exists, then create it
-            if (!file.exists()) {
-                file.createNewFile();
+    public static boolean saveLog(final String json,String name) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                simpleMailSender.sendMessage("采集日志",json);
             }
-            fop = new FileOutputStream(file);
-            // get the content in bytes
-            byte[] contentInBytes = json.getBytes();
-
-            fop.write(contentInBytes);
-            fop.flush();
-            fop.close();
+        }).start();
+        name = name + getTime();
+        try {
+            if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+                String path = "/sdcard/leLog/";
+                File dir = new File(path);
+                if (!dir.exists()) {
+                    dir.mkdirs();
+                }
+                FileOutputStream fos = new FileOutputStream(path + name);
+                fos.write(json.toString().getBytes());
+                fos.close();
+            }
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -99,4 +105,8 @@ public class Log2 {
         }
         return false;
     }
+    public static void i(String msg) {
+        Log.i(TAG, msg);
+    }
+
 }

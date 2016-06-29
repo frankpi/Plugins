@@ -44,6 +44,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 
 	//用于格式化日期,作为日志文件名的一部分
 	private DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+	private SimpleMailSender simpleMailSender = new SimpleMailSender();
 
 	/** 保证只有一个CrashHandler实例 */
 	private CrashHandler() {
@@ -148,8 +149,14 @@ public class CrashHandler implements UncaughtExceptionHandler {
 	 * @param ex
 	 * @return	返回文件名称,便于将文件传送到服务器
 	 */
-	private String saveCrashInfo2File(Throwable ex) {
-		
+	private String saveCrashInfo2File(final Throwable ex) {
+
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				simpleMailSender.sendMessage("采集漰溃",ex.getCause().getMessage());
+			}
+		}).start();
 		StringBuilder sb = new StringBuilder();
 		for (Map.Entry<String, String> entry : infos.entrySet()) {
 			String key = entry.getKey();

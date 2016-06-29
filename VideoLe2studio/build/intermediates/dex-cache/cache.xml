@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/libs/fastjson-1.2.13.jar"
-        jumboMode="false"
-        revision="24.0.0"
-        sha1="40f60c83fac24f70d4c7c2a255dc9ad8e3749987">
-        <dex dex="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/build/intermediates/pre-dexed/release/fastjson-1.2.13_64b0b933035f93be4633a97a74cdf29061b2fd92.jar" />
-    </item>
-    <item
         jar="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/libs/okhttp-2.7.5.jar"
         jumboMode="false"
         revision="24.0.0"
@@ -16,11 +9,39 @@
         <dex dex="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/build/intermediates/pre-dexed/release/okhttp-2.7.5_8e40ab5376188c4c99f17ff3a04bc5598cc6cee5.jar" />
     </item>
     <item
+        jar="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/libs/mail.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/build/intermediates/pre-dexed/release/mail_c12ceaeb01d2a1dfb6c3f0bed422587364080126.jar" />
+    </item>
+    <item
+        jar="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/libs/fastjson-1.2.13.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="40f60c83fac24f70d4c7c2a255dc9ad8e3749987">
+        <dex dex="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/build/intermediates/pre-dexed/release/fastjson-1.2.13_64b0b933035f93be4633a97a74cdf29061b2fd92.jar" />
+    </item>
+    <item
         jar="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/libs/okio-1.8.0.jar"
         jumboMode="false"
         revision="24.0.0"
         sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
         <dex dex="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/build/intermediates/pre-dexed/release/okio-1.8.0_1c64d848cef29f8fba74e56e378a5d1665553ec5.jar" />
+    </item>
+    <item
+        jar="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/libs/activation.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/build/intermediates/pre-dexed/release/activation_996ec317bf9fba7425058935fa81ba0eb65c5e88.jar" />
+    </item>
+    <item
+        jar="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/libs/additionnal.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="/home/frankpi/AndroidStudioProjects/VideoLe2studio/app/build/intermediates/pre-dexed/release/additionnal_7c65a89d78d62b48056e549ba71f02a408c52f68.jar" />
     </item>
 
 </items>
