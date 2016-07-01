@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="35dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/func_tv_value"
+        style="@style/Plugin_TextView01"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="value" 
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/func_tv_name"
+        style="@style/Plugin_TextView01"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="冲锋晕眩时间" />
+
+    <TextView
+        android:id="@+id/func_tv_level"
+        style="@style/Plugin_TextView01"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="x1"
+        android:textSize="18sp" />
+
+</RelativeLayout>

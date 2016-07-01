@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pluginame">上帝模式</string>
+    <string name="cheat_1">复活</string>
+    <string name="cheat_2">暴走</string>
+    <string name="cheat_3">双加：加钱100000，经验10000</string>
+
+</resources>

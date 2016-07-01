@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_select">#ffbce7ff</color>
+    <color name="transparent_select_gray">#ffc6c6c6</color>
+    <color name="transparent_gray">#aac0c0c0</color>
+    <color name="exchange_green">#ff64c95f</color>
+    <color name="red">#ffff0000</color>
+    <color name="black">#000000</color>
+    <color name="write">#ffffff</color>
+
+</resources>

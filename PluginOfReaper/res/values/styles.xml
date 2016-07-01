@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Plugin_TextView01" parent="android:Widget.Holo.TextView">
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="value_button_float_radio_exex" parent="@android:style/Widget.Button">
+         <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_float_radio_menubg_ex</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="value_checkbox_switch4" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/style_checkbox_switch4</item>
+    </style>
+    <style name="value_button_green01" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_button_green01</item>
+    </style>
+    <style name="value_seekbar_base_float" parent="@android:style/Widget.SeekBar">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:maxHeight">5.0dip</item>
+        <item name="android:progressDrawable">@drawable/style_seekbar_float_ex</item>
+        <item name="android:minHeight">5.0dip</item>
+        <item name="android:thumb">@drawable/btn_thumb_bar</item>
+        <item name="android:thumbOffset">5.0dip</item>
+    </style>
+</resources>
