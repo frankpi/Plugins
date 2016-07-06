@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>   
+    <color name="transparent">#00000000</color>
+    <color name="transparent_select">#ffbce7ff</color>
+    <color name="transparent_select_gray">#ffc6c6c6</color>
+</resources>

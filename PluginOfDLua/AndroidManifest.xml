@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gameassist.plugin.anomalydefenders"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/pluginame" >
+        <meta-data
+            android:name="Entry"
+            android:value="com.gameassist.plugin.kritikamobile.PluginEntry" />
+        <meta-data
+            android:name="Target0"
+            android:value="com.dw.fs.anzhi" />
+        <meta-data
+            android:name="Version0"
+            android:value="30" />
+        <meta-data
+            android:name="Label"
+            android:value="DLua" />
+        <meta-data
+            android:name="Description"
+            android:value="DLua" />
+    </application>
+
+</manifest>
