@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@drawable/float_bg" android:paddingLeft="@dimen/dp20" android:paddingTop="@dimen/dp10" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:scrollbars="none" android:layout_width="250.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@+id/floatShowPos" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginBottom="5.0dip" android:text="坐标传送" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <!-- <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@+id/floatTextSpawnPos">
+                <TextView android:visibility="gone" android:textColor="@color/red" android:id="@+id/floatBtnSetSpawn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="设重生点" android:layout_weight="1.0" style="@style/value_button_float_common_style01" />
+                <TextView android:visibility="gone"  android:textColor="@color/red" android:id="@+id/floatBtnKillSelf" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="自杀" android:layout_weight="1.0" style="@style/value_button_float_common_style01" />
+                <TextView android:visibility="gone" android:textColor="@color/red" android:id="@+id/floatBtnBackToDeathPoint" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="回死亡点" android:layout_weight="1.0" style="@style/value_button_float_common_style01" />
+            </LinearLayout> -->
+        <TextView android:id="@+id/tvfloatSpawnLayoutLine" android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|right" android:id="@+id/floatTextDeliverPos1" android:layout_width="fill_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="保存坐标点" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+           <TextView  android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@+id/floatTextDeliverName1" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="未保存坐标" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_below="@+id/floatTextDeliverName1">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/floatBtnDeliverSave1" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="保存" style="@style/value_button_float_common_style01" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/floatBtnDeliverGoto1" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="传送" style="@style/value_button_float_common_style01" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/floatDeliverImageView1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="140dp"
+                    android:layout_height="80dp" 
+                    android:src="@drawable/ic_unknown" 
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@+id/floatTextDeliverName2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="未保存坐标" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|right" android:id="@+id/floatTextDeliverPos2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="保存坐标点" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_below="@+id/floatTextDeliverName2">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/floatBtnDeliverSave2" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="保存" style="@style/value_button_float_common_style01" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/floatBtnDeliverGoto2" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="传送" style="@style/value_button_float_common_style01" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/floatDeliverImageView2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="140dp"
+                    android:layout_height="80dp" 
+                    android:src="@drawable/ic_unknown" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:id="@+id/floatTextDeliverName3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="未保存坐标" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center|right" android:id="@+id/floatTextDeliverPos3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="保存坐标点" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_below="@+id/floatTextDeliverName3">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/floatBtnDeliverSave3" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="保存" style="@style/value_button_float_common_style01" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/floatBtnDeliverGoto3" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="传送" style="@style/value_button_float_common_style01" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/floatDeliverImageView3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_unknown" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView   android:id="@+id/floatLayoutRoleView" android:background="@drawable/float_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip"  android:layout_width="300.0dip" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/floatLinearLayoutRoleLevel1" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center|left" android:id="@+id/tv_roleLevel" android:layout_width="65.0dip" android:layout_height="fill_parent" android:text="等级:" />
+                <SeekBar android:id="@+id/sb_roleLevel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:max="2000" android:layout_weight="1.0" style="@style/value_seekbar_base_float" />
+            </LinearLayout>
+            <TextView android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="20dp" android:text="创建模式等级不可用" />
+             <View android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:orientation="horizontal"  android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:gravity="center|left" android:id="@+id/tvRoleSpeed" android:layout_width="65.0dip" android:layout_height="fill_parent" android:text="速度:" />
+                <SeekBar android:id="@+id/sbRoleSpeed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:max="8" android:layout_weight="1.0" style="@style/value_seekbar_base_float" />
+            </LinearLayout>
+            <View android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <CheckBox android:id="@+id/cb_fly" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="双击飞行" style="@style/value_checkbox_switch4" />
+            <View android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <CheckBox android:id="@+id/cb_invincible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="无敌" style="@style/value_checkbox_switch4" />
+<!--             <View android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <CheckBox android:id="@+id/cb_showPos" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="显示坐标" style="@style/value_checkbox_switch4" /> -->
+             <View android:background="@color/float_split_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <CheckBox android:id="@+id/cb_animalMove" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="动物不会移动" style="@style/value_checkbox_switch4" />
+        </LinearLayout>
+    </ScrollView> 

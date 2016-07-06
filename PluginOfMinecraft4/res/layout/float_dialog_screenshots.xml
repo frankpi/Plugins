@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/float_bg" >
+
+    <ImageView
+        android:id="@+id/floatImageCapshot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10.0dip"
+        android:adjustViewBounds="true"
+        android:padding="10.0dip"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/floatImageCapshotSplitLine"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/floatImageCapshot"
+        android:background="@color/float_split_line" />
+
+    <LinearLayout
+        android:id="@+id/floatScreenShotOptionLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_below="@id/floatImageCapshotSplitLine"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/floatCapshotCancel"
+            style="@style/value_button_float_common_style01"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:text="不保存"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/floatCapshotSave"
+            style="@style/value_button_float_common_style01"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:text="保存到相册"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

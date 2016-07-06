@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/float_bg" android:layout_width="300.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+        <RadioGroup android:orientation="horizontal" android:id="@+id/floatLayoutItemType1" android:layout_width="fill_parent" android:layout_height="35dp">
+	        <RadioButton android:checked="true" android:textSize="13.0sp" android:id="@+id/floatBtnItemTypeNewItems" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="新的" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+	        <RadioButton android:textSize="13.0sp" android:id="@+id/floatBtnItemTypeBlock" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="方块" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+	        <RadioButton android:textSize="13.0sp" android:id="@+id/floatBtnItemTypeStone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="矿物" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+	        <RadioButton android:textSize="13.0sp" android:id="@+id/floatBtnItemTypeTool" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="工具" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+	        <RadioButton android:textSize="13.0sp" android:id="@+id/floatBtnItemTypeFood" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="食物" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+	        <RadioButton android:textSize="13.0sp" android:id="@+id/floatBtnItemTypeTree" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="植物" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+	        <RadioButton android:textSize="13.0sp" android:id="@+id/floatBtnItemTypeEgg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="蛋卵" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+           	<RadioButton android:textSize="13.0sp" android:id="@+id/floatBtnItemTypeMedicine" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="药水" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+           	<RadioButton android:textSize="13.0sp" android:id="@+id/floatBtnItemTypeOther" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="杂项" android:layout_weight="1.0" style="@style/value_button_float_radio_ex" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/floatSeekTextItemCount" android:layout_width="25.0dip" android:layout_height="fill_parent" android:text="1" />
+        <SeekBar android:id="@+id/floatSeekbarItemCount" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:max="64" android:layout_weight="1.0" style="@style/value_seekbar_base_float" />
+       
+      <!--   <Button  android:id="@+id/floatButtonSelectAll" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:text="全选" style="@style/value_button_float_common_style01" /> -->
+        <TextView android:id="@+id/floatBtnAddItem" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="添加" style="@style/value_button_float_common_style01" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/floatGridItemList"
+        style="@style/value_gridview_base"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:horizontalSpacing="3.0dip"
+        android:numColumns="4"
+        android:verticalSpacing="3.0dip" />
+
+</LinearLayout>
