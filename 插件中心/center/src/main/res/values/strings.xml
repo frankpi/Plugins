@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="PluginName">插件中心</string>
+    <string name="app_name">插件中心</string>
+    <string name="Plugin_Dependency_Fail">%1$s不存在，辅助%2$s无法运行</string>
+    <string name="Plugin_Choose">GG小管家(%1$s)</string>
+    <string name="Plugin_No_Description">作者没写说明，请自己挖掘用途^_^</string>
+    <string name="Plugin_No_UI">该辅助已自动启用无需配置</string>
+    <string name="Plugin_No_GG_WARNING">未安装GG助手，该辅助可能失效</string>
+    <string name="Plugin_No_Gameassist">安装GG助手，更多游戏与欢乐。</string>
+    <string name="Plugin_HideTip">翻转手机，屏幕向下，就可以隐藏或显示GG小管家哟 ^_^</string>
+    <string name="GotoForum">求更新，求辅助，吐槽＋投诉，点我开炮</string>
+    <string name="GotoForumFail">未安装GG助手，无法寻求GG官方支援</string>
+    <string name="MIUI_WARNING">请注意：您的MIUI可能需要允许本游戏的悬浮窗权限，才能显示辅助窗口</string>
+    <string name="PlayTime">本次游戏时长:</string>
+    <string name="PlayTimeTotal">总游戏时长:</string>
+    <string name="NeedMorePlay">请不要调戏GG小管家(⊙_⊙)\n再多玩会儿游戏吧O(∩_∩)O\n倒计时%1$s^_^</string>
+    <string name="plugin_menu_message">消息</string>
+    <string name="plugin_menu_customerservice">客服</string>
+    <string name="plugin_menu_service_text">如果超过10分钟仍然没有收到道具请联系客服</string>
+    <string name="plugin_menu_service_send">立即联系</string>
+    <string name="plugin_menu_service_qq">3508928085</string>
+    <string name="plugin_menu_login_dialog_text">请登录GG助手后使用积分购买</string>
+    <string name="plugin_menu_login_dialog">登录GG助手</string>
+    <string name="plugin_menu_guide">攻略</string>
+    <string name="menu_tv_message">消息</string>
+    <string name="menu_tv_comment">评论</string>
+    <string name="menu_tv_guide">攻略</string>
+    <string name="menu_tv_service">客服</string>
+    <string name="service_copy"><u>复制</u></string>
+
+</resources>

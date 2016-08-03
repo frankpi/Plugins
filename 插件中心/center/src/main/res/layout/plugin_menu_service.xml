@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plugin_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/service_back"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/list_selector_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/menu_back"/>
+
+            <TextView
+                style="@style/value_menu_back_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:text="@string/plugin_menu_customerservice"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/list_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/plugin_menu_service_text"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/value_menu_back_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ:"/>
+
+                <TextView
+                    android:id="@+id/service_qq"
+                    style="@style/value_menu_back_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/plugin_menu_service_qq"
+
+                    android:textIsSelectable="true"/>
+                <TextView
+                    android:id="@+id/service_copy_qq"
+                    style="@style/value_menu_back_textview"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/service_copy"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/list_divider"/>
+
+        <LinearLayout
+            android:id="@+id/service_send"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/list_selector_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/value_menu_back_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plugin_menu_service_send"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

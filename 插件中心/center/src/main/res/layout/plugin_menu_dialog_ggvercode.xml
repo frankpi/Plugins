@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/transparent_60"
+             android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/upgrade_bg"
+        android:layout_width="278dp"
+        android:layout_height="215dp"
+        android:layout_gravity="center"
+        android:background="@drawable/upgradegg">
+
+        <ImageView
+            android:id="@+id/upgrade_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/menu_close"/>
+
+        <TextView
+            android:id="@+id/upgrade_confirm"
+            style="@style/value_menu_textview"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="154dp"
+            android:background="@drawable/login_btn_green_bg"
+            android:text="@string/plugin_menu_login_dialog"/>
+    </RelativeLayout>
+
+</FrameLayout>

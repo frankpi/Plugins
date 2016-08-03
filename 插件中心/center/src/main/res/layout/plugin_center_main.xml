@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/sidebar"
+        android:layout_width="@dimen/plugin_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/plugin_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height">
+
+            <LinearLayout
+                android:id="@+id/header_logined"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/header_usr_avatar"
+                    android:layout_width="@dimen/header_avatar_wh"
+                    android:layout_height="@dimen/header_avatar_wh"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/header_avatar"/>
+
+                <TextView
+                    android:id="@+id/header_usr_name"
+                    style="@style/value_menu_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="GG助手"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/header_scores"/>
+
+                <TextView
+                    android:id="@+id/header_usr_scores"
+                    style="@style/value_menu_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_vertical"
+                    android:text="0"/>
+
+                <Button
+                    android:id="@+id/header_btn_scores"
+                    style="@style/value_menu_textview"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/header_btn_bg"
+                    android:text="赚积分"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/header_unlogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/header_avatar_wh"
+                    android:layout_height="@dimen/header_avatar_wh"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/header_avatar"/>
+
+                <Button
+                    android:id="@+id/header_btn_login"
+                    style="@style/value_menu_textview"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/header_btn_bg"
+                    android:text="登录"/>
+
+                <TextView
+                    android:id="@+id/header_tv_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/list_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_height"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/menu_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/list_selector_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/value_menu_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/menu_tv_message"/>
+
+                <ImageView
+                    android:id="@+id/menu_message_redpoint"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/menu_red_point"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_divider"/>
+
+            <TextView
+                android:id="@+id/menu_comment"
+                style="@style/value_menu_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/list_selector_background"
+                android:text="@string/menu_tv_comment"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_divider"/>
+
+            <TextView
+                android:id="@+id/menu_guide"
+                style="@style/value_menu_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/list_selector_background"
+                android:text="@string/menu_tv_guide"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_divider"/>
+
+            <TextView
+                android:id="@+id/menu_service"
+                style="@style/value_menu_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/list_selector_background"
+                android:text="@string/menu_tv_service"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/list_divider"/>
+
+        <ListView
+            android:id="@+id/pluginsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/list_divider"/>
+    </LinearLayout>
+
+    <com.gameassist.plugin.center.DragViewContainer
+        android:id="@+id/pluginView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/dragbar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:alpha="0.7"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon"/>
+
+    <FrameLayout
+        android:id="@+id/purchase_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/gg_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

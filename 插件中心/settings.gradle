@@ -1,0 +1,3 @@
+include ':center',':jni'
+
+project(':jni').projectDir = new File(settingsDir, 'dep/jni')

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_60">#60000000</color>
+    <color name="transparent_90">#90000000</color>
+    <color name="transparent_gray">#aac0c0c0</color>
+    <color name="green_background">#ff27ae6c</color>
+    <color name="line_dark">#ff298e56</color>
+    <color name="line_light">#ff4ebd88</color>
+    <color name="color_green">#54b535</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_70">#70ffffff</color>
+    <color name="color_ca">#cacaca</color>
+</resources>

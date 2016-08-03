@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gameassist.plugin.center"
+    android:versionCode="4"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/PluginName" >
+        <meta-data
+            android:name="Entry"
+            android:value="com.gameassist.plugin.center.PluginEntry" />
+        <meta-data
+            android:name="Target0"
+            android:value="*" />
+        <meta-data
+            android:name="Version0"
+            android:value="*" />
+        <meta-data
+            android:name="Type"
+            android:value="plugin" />
+        <meta-data
+            android:name="Label"
+            android:value="@string/PluginName" />
+        <meta-data
+            android:name="Description"
+            android:value="@string/PluginName" />
+    </application>
+
+</manifest>

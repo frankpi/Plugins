@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="200dp"
+        android:background="@drawable/plugin_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/scores_back"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/list_selector_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/menu_back"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/scores_usr_avatar"
+                android:layout_width="@dimen/header_avatar_wh"
+                android:layout_height="@dimen/header_avatar_wh"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/header_avatar"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/scores_usr_name"
+                style="@style/value_menu_back_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="gg助手" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/list_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/menu_scores" />
+
+            <TextView
+                android:id="@+id/scores_usr_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="176"
+                android:textColor="@color/white"
+                android:textSize="33sp" />
+
+            <TextView
+                style="@style/value_menu_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="积分" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/scores_earn"
+                style="@style/value_menu_white12"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="29dp"
+                android:background="@drawable/header_btn_bg"
+                android:text="赚积分" />
+
+            <Button
+                android:id="@+id/scores_recharge"
+                style="@style/value_menu_white12"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="@drawable/header_btn_bg"
+                android:text="积分充值" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

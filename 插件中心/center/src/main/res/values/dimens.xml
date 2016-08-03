@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="menu_height">40dp</dimen>
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="plugin_width">334dp</dimen>
+    <dimen name="header_avatar_wh">30dp</dimen>
+
+</resources>

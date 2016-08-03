@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent_60"
+                android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plugin_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/commodity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/header_btn_bg_unpress"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="商品名称"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:background="@drawable/commodity_lighting"
+            android:padding="15dp"
+            android:src="@drawable/commodity_iv"/>
+
+        <TextView
+            android:id="@+id/commodity_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="商品描述"
+            android:textColor="@color/color_ca"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/purchase_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            style="@style/value_menu_textview"
+            android:text="购买中……"
+        />
+        <LinearLayout
+            android:id="@+id/purchase_price_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/purchase_btn"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textSize="14sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/purchase_iv"/>
+
+            <TextView
+                android:id="@+id/commodity_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/purchase_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:scaleType="center"
+        android:src="@drawable/menu_close"/>
+
+</RelativeLayout>
